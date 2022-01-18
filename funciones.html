@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      main {
+        display: grid;
+        /* grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); */
+
+        /*  El fit content solo funciona con contenido adentro es como un auto */
+        grid-template-columns: auto fit-content(800px) auto;
+      }
+
+      .div {
+        height: 50px;
+        background-color: blue;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <div class="div" style="background-color: yellow">1</div>
+      <div class="div" style="background-color: lightblue">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, nam
+        facilis qui repellendus, eius ratione temporibus ducimus ipsum quod,
+        magni distinctio optio itaque. Sint, eum corporis. Aut iste vitae eum.
+      </div>
+      <div class="div" style="background-color: lightsalmon">3</div>
+    </main>
+  </body>
+</html>
